@@ -7,10 +7,10 @@ use discovery_handler::DiscoveryHandlerImpl;
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>> {
     // Specify the name of this DiscoveryHandler. A discovery handler is usually, but not necessarily, identified by
     // the protocol it uses.
-    let name = "todo";
+    let name = "mdns";
     // Specify whether the devices discovered by this discovery handler are locally attached (or embedded) to nodes or are
     // network based and usable/sharable by multiple nodes.
-    let shared = false;
+    let shared = true;
     // A DiscoveryHandler must handle the Agent dropping a connection due to a Configuration that utilizes this
     // DiscoveryHandler being deleted or the Agent erroring. It is impossible to determine the cause of the
     // disconnection, so in case the Agent did error out, the Discovery Handler should try to re-register.
