@@ -29,7 +29,7 @@ dependencies = [
 [[package]]
 name = "akri-discovery-utils"
 version = "0.12.20"
-source = "git+https://github.com/project-akri/akri?branch=main#58e2371f93ab229039d1916f3dd7b4810af202fa"
+source = "git+https://github.com/project-akri/akri?rev=58e2371f93ab229039d1916f3dd7b4810af202fa#58e2371f93ab229039d1916f3dd7b4810af202fa"
 dependencies = [
  "akri-shared",
  "anyhow",
@@ -50,7 +50,7 @@ dependencies = [
 [[package]]
 name = "akri-shared"
 version = "0.12.20"
-source = "git+https://github.com/project-akri/akri?branch=main#58e2371f93ab229039d1916f3dd7b4810af202fa"
+source = "git+https://github.com/project-akri/akri?rev=58e2371f93ab229039d1916f3dd7b4810af202fa#58e2371f93ab229039d1916f3dd7b4810af202fa"
 dependencies = [
  "anyhow",
  "async-trait",
