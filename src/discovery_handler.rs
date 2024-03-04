@@ -88,7 +88,8 @@ impl DiscoveryHandler for DiscoveryHandlerImpl {
                                 let mut properties = HashMap::from([(
                                     "MDNS_HOSTNAME".to_string(),
                                     service.get_hostname().to_string(),
-                                )]);
+                                ), ("MDNS_PORT".to_string(), service.get_port().to_string())]);
+                                
                                 properties.extend(service.get_addresses().iter().enumerate().map(
                                     |(index, ip)| {
                                         (format!("MDNS_IP_ADDRESS_{}", index), ip.to_string())
